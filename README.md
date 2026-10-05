@@ -163,7 +163,7 @@ The system provides basic student management operations along with low-level Lin
 
 ## 12. Author
 
-**Milan Swain**
+**Subhankar Pradhan**
 
 B.Tech Computer Science and Engineering
 
