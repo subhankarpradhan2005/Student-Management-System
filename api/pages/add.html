@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Student</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">S</div>
+
+            <div>
+                <h2>Student</h2>
+                <span>Management</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/add" class="active">Add Student</a>
+            <a href="/search">Search Student</a>
+            <a href="/update">Update Student</a>
+            <a href="/delete">Delete Student</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Add Student</h1>
+                <p>Add a new student to the system</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-circle">M</div>
+                <span>Admin</span>
+            </div>
+
+        </header>
+
+
+        <section class="content-card">
+
+            <form action="/add" method="POST">
+
+                <label>Student ID</label>
+                <input type="number" name="id" required>
+
+
+                <label>Name</label>
+                <input type="text" name="name" required>
+
+
+                <label>Age</label>
+                <input type="number" name="age" required>
+
+
+                <label>Course</label>
+                <input type="text" name="course" required>
+
+
+                <label>Marks</label>
+                <input type="number"
+                       name="marks"
+                       min="0"
+                       max="100"
+                       step="0.01"
+                       required>
+
+
+                <button type="submit" class="view-btn">
+                    Add Student
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

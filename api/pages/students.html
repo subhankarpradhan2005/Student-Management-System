@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Students</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">S</div>
+
+            <div>
+                <h2>Student</h2>
+                <span>Management</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/add">Add Student</a>
+            <a href="/students" class="active">View All Students</a>
+            <a href="/search">Search Student</a>
+            <a href="/update">Update Student</a>
+            <a href="/delete">Delete Student</a>
+        </nav>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>All Students</h1>
+                <p>View all students in the system</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-circle">M</div>
+                <span>Admin</span>
+            </div>
+
+        </header>
+
+
+        <section class="content-card">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {{STUDENT_ROWS}}
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

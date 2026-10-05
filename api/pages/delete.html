@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delete Student</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">S</div>
+
+            <div>
+                <h2>Student</h2>
+                <span>Management</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="/">Dashboard</a>
+            <a href="/add">Add Student</a>
+            <a href="/students">View All Students</a>
+            <a href="/search">Search Student</a>
+            <a href="/update">Update Student</a>
+            <a href="/delete" class="active">Delete Student</a>
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Delete Student</h1>
+                <p>Remove a student from the system</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-circle">M</div>
+                <span>Admin</span>
+            </div>
+
+        </header>
+
+        <section class="content-card">
+
+            <form action="/delete" method="POST">
+
+                <label>Student ID</label>
+
+                <input
+                    type="number"
+                    name="id"
+                    placeholder="Enter Student ID"
+                    required
+                >
+
+                <button type="submit" class="view-btn">
+                    Delete Student
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

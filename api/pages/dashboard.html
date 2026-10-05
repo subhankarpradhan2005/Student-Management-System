@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <div>
+                <h2>Student</h2>
+                <span>Management</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="/" class="active">Dashboard</a>
+            <a href="/add">Add Student</a>
+            <a href="/search">Search Student</a>
+            <a href="/update">Update Student</a>
+            <a href="/delete">Delete Student</a>
+        </nav>
+        <div class="logout">
+    <a href="/logout">Logout</a>
+</div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome to Student Management System</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-circle">M</div>
+                <span>Admin</span>
+            </div>
+        </header>
+
+       <section class="stats">
+
+    <div class="stat-card">
+        <div class="stat-icon">👨‍🎓</div>
+        <div>
+            <p>Total Students</p>
+            <h2>{{TOTAL_STUDENTS}}</h2>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">📚</div>
+        <div>
+            <p>Total Courses</p>
+            <h2>{{TOTAL_COURSES}}</h2>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">📊</div>
+        <div>
+            <p>Average Marks</p>
+            <h2>{{AVERAGE_MARKS}}</h2>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <div class="stat-icon">⭐</div>
+        <div>
+            <p>Top Marks</p>
+            <h2>{{TOP_MARKS}}</h2>
+        </div>
+    </div>
+
+</section>
+
+        <!-- Recent Students -->
+        <section class="content-card">
+
+            <div class="section-header">
+                <div>
+                    <h2>Recent Students</h2>
+                    <p>Recently added students</p>
+                </div>
+
+               <a href="/students" class="view-btn">View All</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Course</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           <tbody>
+    {{RECENT_STUDENTS}}
+</tbody>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
